@@ -1,8 +1,16 @@
 #!/usr/bin/python3
-"""This code calculates the fewest number of operations needed to result in the exact characters in a file"""
+"""Module which contains minoperations function"""
 
 
 def minOperations(n):
+    """ Calculates the fewest number of operations needed
+        to result in exactly n H characters in the file
+
+        Args:
+            n: repetitions of H
+        Returns:
+            number of operations (Copy & Paste) to reach n Hs
+    """
     operations = 0
     summation = 1
     carrier = 0
@@ -15,5 +23,4 @@ def minOperations(n):
         else:
             summation += carrier
         operations += 1  # Always paste
-
-    return operations
+    return minOperations()
