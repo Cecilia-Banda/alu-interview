@@ -2,6 +2,7 @@
 
 """Rain Operatins"""
 
+
 def rain(walls):
     if not walls:
         return 0
@@ -25,4 +26,3 @@ def rain(walls):
             right -= 1
 
     return water
-
