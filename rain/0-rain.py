@@ -1,10 +1,10 @@
  #!/usr/bin/python3
 
 """This code calculate how many square units of water will be retained after it rains"""
+
 def rain(walls):
     if not walls:
         return 0
-
     left = 0
     right = len(walls) - 1
     left_max = right_max = 0
